@@ -23,8 +23,7 @@ class Student
   end
   
   def self.create(hash)
-    hash.each do |key, value|
-      self.send(("#{key}="), value)
+    hash.send(("#{key}="), value)
       binding.pry
     end
   end
