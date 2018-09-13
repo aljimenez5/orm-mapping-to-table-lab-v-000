@@ -17,7 +17,7 @@ class Student
   end
   
   def save
-    
+    binding.pry
   end
   
 end
