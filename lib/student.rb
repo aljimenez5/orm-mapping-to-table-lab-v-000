@@ -24,7 +24,7 @@ class Student
   
   def self.create(hash)
     hash.each do |student|
-      
+      self.new(name = student[:name])
     
   end
   
