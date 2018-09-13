@@ -23,8 +23,7 @@ class Student
   end
   
   def self.create(hash)
-    self.new(name = hash[:name], grade = hash[:grade])
-    binding.pry
+    self.new(name = hash[:name], grade = hash[:grade]).save
   end
   
 end
