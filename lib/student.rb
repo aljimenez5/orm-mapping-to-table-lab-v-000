@@ -24,7 +24,7 @@ class Student
   
   def self.create(hash)
     hash.each do |key, value|
-      self.send("#{key}= value")
+      self.send("#{(key)}= value")
       #self.new(name = student[:name], grade = student[:grade]).save
       binding.pry
     end
