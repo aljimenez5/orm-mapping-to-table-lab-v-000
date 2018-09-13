@@ -23,7 +23,7 @@ class Student
   end
   
   def self.create(hash)
-    hash.send(("#{key}="), value)
+    hash.each (("#{key}="), value)
     
   end
   
