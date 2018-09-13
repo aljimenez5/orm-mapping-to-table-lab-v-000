@@ -24,7 +24,6 @@ class Student
   
   def self.create(hash)
     hash.send(("#{key}="), value)
-      binding.pry
     
   end
   
