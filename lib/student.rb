@@ -23,7 +23,7 @@ class Student
   end
   
   def self.create(hash)
-    self.send(hash[:name])
+    #self.send(hash[:name])
     binding.pry
   end
   
