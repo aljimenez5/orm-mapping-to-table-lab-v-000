@@ -17,6 +17,7 @@ class Student
   end
   
   def save
+    DB[:conn].execute("INSERT INTO students (name, grade) VALUES (?, ?)")
     binding.pry
   end
   
