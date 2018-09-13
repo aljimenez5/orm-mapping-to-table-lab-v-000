@@ -19,7 +19,7 @@ class Student
   
   def save
     DB[:conn].execute("INSERT INTO students (name, grade) VALUES (?, ?)", self.name, self.grade)
-    @id = DB[:conn].execute("SELECT id FROM students WHERE name = ?", self.name).flatten!(2)
+    @id = DB[:conn].execute("SELECT id FROM students WHERE name = ?", self.name)
   end
   
 end
