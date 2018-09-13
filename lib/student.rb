@@ -22,4 +22,6 @@ class Student
     @id = DB[:conn].execute("SELECT id FROM students WHERE name = ?", self.name)[0][0]
   end
   
+  def self.create
+  
 end
